@@ -104,6 +104,20 @@ fn main() {
     };
     println!("match_result: {}", match_result);
 
+    let pair = (2, -2);
+    match pair {
+        (x, y) if x == y => println!("These are twins"),
+        _ => println!("end...")
+    }
+
+    let age: u8 = 11;
+    match age {
+        0 => println!("it's zero"),
+        n @ 1 ..= 12 => println!("your age is: {}", n),
+        _ => println!("end...")
+    }
+    
+
     let ref1 = &4; 
     match *ref1 {
         val => println!("{:?}", val)
