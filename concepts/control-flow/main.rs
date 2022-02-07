@@ -110,4 +110,14 @@ fn main() {
     }
     println!("{:?}", ref1);
 
+    if let 3 | 1 = match_number {
+        println!("3");
+    } else if condition {
+        println!("condition true");
+    } else if let 2 = match_number {
+        println!("2");
+    } else {
+        println!("nothing happens");
+    }
+
 }
